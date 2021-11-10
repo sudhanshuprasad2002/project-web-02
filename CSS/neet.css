@@ -1,0 +1,218 @@
+/* NEET Page Changes */
+
+/* Card-Page-Styling-Change */
+
+.body-card-03 {
+  background-color: #ffb35d;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+}
+
+.body-card-04 {
+  background-color: #ffc17b;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+}
+
+/* Card-Page-Styling-Change */
+
+/* -----------------------Home-Section-Styling--------------------- */
+.main-03 {
+  background-color: #ffab4c;
+}
+
+.main-container-03 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 100vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 30px;
+}
+
+.main-content-03 h1 {
+  font-size: 4rem;
+  background-image: linear-gradient(to top, #0f2027 0%, #2c5364 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.main-content-03 h2 {
+  font-size: 2rem;
+  background-image: linear-gradient(to top, #c31432 0%, #240b36 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main-content-03 p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main-btn-03 {
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #ed213a 0%, #93291e 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.main-btn-03 a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-btn-03:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #f8472f;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main-btn-03:hover {
+  color: #000;
+}
+
+.main-btn-03:hover:after {
+  width: 100%;
+}
+
+.main-img-container-03 {
+  text-align: center;
+}
+
+#main-img-03 {
+  height: 70%;
+  width: 86%;
+  margin-left: 50px;
+  margin-bottom: 65px;
+}
+
+/* -----------------------Home-Section-Styling--------------------- */
+
+/* -----------------------Making-Home-Section-Responsive--------------------- */
+
+@media (min-width: 320px) and (max-width: 470px) {
+  .main-03 {
+    padding-top: 60px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-03 {
+    padding-top: 210px;
+  }
+
+  .main-container-03 {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .main-content-03 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .main-content-03 h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+  .main-content-03 h2 {
+    font-size: 3rem;
+  }
+
+  .main-content-03 p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  #main-img-03 {
+    height: 100%;
+    width: 95%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-content-03 h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .main-content-03 h2 {
+    font-size: 2rem;
+  }
+
+  .main-content-03 p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .main-btn-03 {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+}
+
+/* -----------------------Making-Home-Section-Responsive--------------------- */
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffab4c;
+  color: rgb(255, 255, 255);
+}
+
+footer h1 {
+  font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer h1 {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
